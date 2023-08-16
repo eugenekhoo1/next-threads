@@ -31,7 +31,7 @@ export default async function Page() {
           <p className="no-result">No users</p>
         ) : (
           <>
-            {result.users.map((person) => (
+            {result.users.map((person: any) => (
               <UserCard
                 key={person.id}
                 id={person.id}
